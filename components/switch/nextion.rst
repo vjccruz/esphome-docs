@@ -127,7 +127,7 @@ All lines are required
 *Explanation*
 
 - ``printh 90`` Tells the library this is a switch bool/integer data
-- ``prints "r0",0`` Sends the name that matches **component_name** or **variable_name**
+- ``prints "r0",0`` Sends the name that matches **component_name** or **variable_name**. If it is a component and has the vscope of ``global``, the **component_name** should be prefixed with the page name (page0/page1 or whatever you have changed it to)
 - ``printh 00`` Sends a NULL
 - ``prints r0.val,0`` The actual value to send. For a variable use the Nextion variable name ``r0`` with out ``.val``
 - ``printh FF FF FF`` Nextion command ack
